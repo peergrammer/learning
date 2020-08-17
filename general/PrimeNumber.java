@@ -1,4 +1,4 @@
-package general;
+package learning.general;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        int max = 1000;
+        int max = 100;
         List<Integer> primeContainer = new ArrayList<Integer>();
 
         for (int i = 0; i <= max; i++ ) {
@@ -36,9 +36,8 @@ public class PrimeNumber {
             } else {
                 isPrime = "not prime";
             }
-            System.out.println(i + " is " +  isPrime);
         }
-        System.out.print("Prime numbers from 0 to " + max + " are " + primeContainer.toString());
+        System.out.println("Prime numbers from 0 to " + max + " are " + primeContainer.toString());
         System.out.println("Total primes from 0 to " + max + " is " + primeContainer.size());
     }
 }
